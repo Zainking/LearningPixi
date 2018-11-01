@@ -570,7 +570,7 @@ add(name, url, optionObject, callbackFunction)
 
 只有`url`必填（你总得加载个文件吧。）
 
-这里有点用了`add`方法加载文件的例子。第一个就是文档里所谓的“正常语法”：
+这里有几个用了`add`方法来加载文件的例子。第一个就是文档里所谓的“正常语法”：
 ```js
 .add('key', 'http://...', function () {})
 .add('http://...', function () {})
