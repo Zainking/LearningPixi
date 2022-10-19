@@ -209,16 +209,16 @@ app.renderer.backgroundColor = 0x061639;
 ```
 如果你想要去找到`画布`的宽高，使用`app.renderer.view.width` 和`app.renderer.view.height`。
 
-使用`画布`的`resize`方法可以改变canvas的大小，提供任何新的`width` 和 `height`变量给他都行。但是为了确认宽高的格式正确，将`autoResize`设置为`true`。
+使用`画布`的`resize`方法可以改变canvas的大小，提供任何新的`width` 和 `height`变量给他都行。但是为了确认宽高的格式正确，将`autoDensity`设置为`true`。
 ```js
-app.renderer.autoResize = true;
+app.renderer.autoDensity = true;
 app.renderer.resize(512, 512);
 ```
 如果你想让canvas占据整个窗口，你可以将这些CSS代码放在文档中，并且刷新你浏览器窗口的大小。
 ```
 app.renderer.view.style.position = "absolute";
 app.renderer.view.style.display = "block";
-app.renderer.autoResize = true;
+app.renderer.autoDensity = true;
 app.renderer.resize(window.innerWidth, window.innerHeight);
 ```
 但是，如果你这么做了，要记得把padding和margin都设置成0：
